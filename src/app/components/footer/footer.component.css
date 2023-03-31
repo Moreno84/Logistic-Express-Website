@@ -1,0 +1,15 @@
+.data-column {
+    @apply flex flex-col gap-4 items-start;
+}
+
+.data-title {
+    @apply flex text-lg font-medium text-black;
+}
+
+.data-links {
+    @apply flex flex-col gap-2 items-start;
+}
+
+.data-subtitle {
+    @apply flex text-sm text-black;
+}

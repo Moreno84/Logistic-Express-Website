@@ -1,0 +1,7 @@
+.data-item{
+    @apply block py-2 pl-3 pr-4 text-black hover:text-green-hover; 
+}
+
+.nav-item{
+    @apply p-2 cursor-pointer; 
+}
