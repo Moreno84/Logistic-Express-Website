@@ -17,7 +17,7 @@ import { RoadserviceComponent } from './pages/homepage/roadservice/roadservice.c
 import { MaritimeserviceComponent } from './pages/homepage/maritimeservice/maritimeservice.component';
 import { ServiceComponent } from './pages/service/service.component';
 import { RailwayserviceComponent } from './pages/homepage/railwayservice/railwayservice.component';
-import { JobComponent } from './pages/job/job.component';
+import { JobComponent } from './pages/homepage/job/job.component';
 
 
 @NgModule({

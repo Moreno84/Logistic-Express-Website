@@ -6,6 +6,8 @@ module.exports = {
       'black': '#505465',
       'greenLight': '#4dffcf',
       'greeLighter': '#4dffcf80',
+      'greenLightDark': '#3ECCA6',
+      'greeLighter-hover': '#4dffcf80',
       'greenLight-hover':'#3ECCA6',
       'green-hover':'#4dffcf',
       'white':'#ffffff',
