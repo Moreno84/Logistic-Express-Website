@@ -18,6 +18,7 @@ import { MaritimeserviceComponent } from './pages/homepage/maritimeservice/marit
 import { ServiceComponent } from './pages/service/service.component';
 import { RailwayserviceComponent } from './pages/homepage/railwayservice/railwayservice.component';
 import { JobComponent } from './pages/homepage/job/job.component';
+import { JobsComponent } from './pages/jobs/jobs.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { JobComponent } from './pages/homepage/job/job.component';
     ServiceComponent,
     RailwayserviceComponent,
     JobComponent,
+    JobsComponent,
 
   ],
   imports: [
