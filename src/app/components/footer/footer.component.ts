@@ -10,8 +10,13 @@ export class FooterComponent {
 
 constructor(private router: Router){}
 
- onClick(){
-  this.router.navigate(['/getintouch']);
+onAboutUs(){
+  this.router.navigate(['/about']);
+ 
+  
+}
 
+ onGetInTouch(){
+  this.router.navigate(['/getintouch']);
  }
 }
