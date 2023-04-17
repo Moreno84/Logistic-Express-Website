@@ -11,7 +11,7 @@ export class NavbarComponent {
   constructor(private router: Router){}
   
   title= "Travelling";
-  logo:string="assets/images/planeLogo.png";
+  logo:string="assets/images/logo.png";
 
   onclick(){
     this.router.navigate(['/getintouch']);
