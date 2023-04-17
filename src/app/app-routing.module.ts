@@ -5,11 +5,13 @@ import { GetInTouchComponent } from './pages/get-in-touch/get-in-touch.component
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 import { ServiceComponent } from './pages/service/service.component';
 import { HomeComponent } from './pages/homepage/home.component';
+import { JobsComponent } from './pages/jobs/jobs.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'service', component: ServiceComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'job', component: JobsComponent},
   {path: 'getintouch', component: GetInTouchComponent},
   {path: '**', component: PagenotfoundComponent}
 
