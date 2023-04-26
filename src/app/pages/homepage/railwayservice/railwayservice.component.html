@@ -3,19 +3,21 @@
         <div class="flex shrink-0 grow-0 basis-2/4">
             <img [src]="imageTrain" alt="plane image" class="rounded-lg">
         </div>
-        <div class="flex-col h-[350px]"> 
+        <div class="flex-col items-center py-3 px-3"> 
+            <div class="flex flex-col gap-2">
             <div>
-                <p class="font-Karma not-italic text-xl leading-8 font-normal">
+                <p class="data-title">
                     {{title}}
                 </p>
-                <p class="font-karma font-bold">{{subTitle}}</p>
+                <p class="data-subTitle">{{subTitle}}</p>
             </div>
             <div>
-                <p class="font-Karma not-italic">
+                <p class="data-text">
                     {{text}}
                 </p>
             </div>
-            <button class="flex items-center justify-center py-3 px-4 gap-2.5 bg-white hover:bg-greenLight-hover rounded w-full md:w-auto">
+            <div>
+            <button class="flex items-center justify-center py-3 px-4 gap-2.5 bg-greenLightDark hover:bg-green-hover rounded w-full md:w-auto">
                 <span height="24" class="flex items-center text-base font-work font-medium leading-5 text-center text-brand100 ">
                     Read more
                 </span>
@@ -23,6 +25,8 @@
                     <path class="text-brand100" fill-rule="evenodd" clip-rule="evenodd" d="M10.0777 0.577406C10.4032 0.251969 10.9308 0.251969 11.2562 0.577406L17.0896 6.41074C17.415 6.73618 17.415 7.26381 17.0896 7.58925L11.2562 13.4226C10.9308 13.748 10.4032 13.748 10.0777 13.4226C9.7523 13.0971 9.7523 12.5695 10.0777 12.2441L14.4885 7.83333H1.50033C1.04009 7.83333 0.666992 7.46023 0.666992 6.99999C0.666992 6.53976 1.04009 6.16666 1.50033 6.16666H14.4885L10.0777 1.75592C9.7523 1.43048 9.7523 0.902843 10.0777 0.577406Z" fill="#FFFAF8"/>
                 </svg>  
             </button>
+            </div>
+            </div>
         </div>
     </div>
 </div>

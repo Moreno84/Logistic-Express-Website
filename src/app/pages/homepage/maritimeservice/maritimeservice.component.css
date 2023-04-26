@@ -1,0 +1,11 @@
+.data-title{
+    @apply font-Karma not-italic text-xl leading-8 font-normal; 
+}
+
+.data-subTitle{
+    @apply font-Karma font-bold text-3xl;
+}
+
+.data-text{
+    @apply font-Karma not-italic;
+}

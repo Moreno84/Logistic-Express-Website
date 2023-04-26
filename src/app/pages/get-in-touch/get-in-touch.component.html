@@ -1,39 +1,36 @@
 <!-- Navbar -->
 <app-navbar></app-navbar>
+<div class="w-full bg-white">
 
-<div class="w-full">
 <div class="flex justify-center py-10 px-10">
-    <img [src]="imageMap" alt="map" class="rounded-lg drop-shadow-xl">
+    <img [src]="imageMap" alt="map" class="rounded-lg drop-shadow-2xl">
 </div>
 
 <div class="pb-3">
-    <h1 class="font-bold not-italic text-greenLight text-4xl text-center underline">
+    <h1 class="font-bold not-italic font-Karma text-black text-4xl text-center underline">
         {{title}}
     </h1>
 </div>
 
-
-
-<div class="flex justify-center h-[400px] py-5 px-5 gap-x-5">
+<div class="flex justify-center h-[400px] py-5 px-5">
 
 <div class="flex-col basis-1/5 text-ellipsis">
-    <p class="first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left not-italic text-left font-normal leading-7">
+    <p class="first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left not-italic text-left font-Karma font-normal leading-7">
         {{text}}
     </p>
 </div>
-
 <div class="flex-col">
         <div class="pb-3">
-            <input type="text" name="nombre" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Name">
+            <input type="text" name="nombre" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm font-Karma" placeholder="Name">
         </div>
         <div class="pb-3">
-            <input type="text" name="apellidos" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Surname">
+            <input type="text" name="apellidos" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm font-Karma" placeholder="Surname">
         </div>
         <div class="pb-3">
-            <input type="email" name="email" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Email">
+            <input type="email" name="email" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm font-Karma" placeholder="Email">
         </div>
         <div class="pb-3">
-            <textarea name="comentarios" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Comment...."></textarea>
+            <textarea name="comentarios" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm font-Karma" placeholder="Comment...."></textarea>
         </div>
         <div>
             <button type="submit" name="btn" id="btn" class="flex items-center justify-center bg-greenLight hover:bg-greenLight-hover rounded-md px-10 py-2 w-full">

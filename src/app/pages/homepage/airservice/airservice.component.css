@@ -1,0 +1,23 @@
+.data-title{
+    @apply font-Karma not-italic text-xl leading-8 font-normal; 
+}
+
+.data-subTitle{
+    @apply font-Karma font-bold text-3xl;
+}
+
+.data-text{
+    @apply font-Karma not-italic;
+}
+
+.item-button{
+    @apply flex items-center justify-center py-3 px-4 gap-2.5  bg-greenLightDark hover:bg-green-hover rounded w-full md:w-auto;
+}
+
+.data-button{
+    @apply flex items-center text-base font-Karma font-extrabold leading-5 text-center text-black;
+}
+
+.data-svg-button{
+    @apply text-black;
+}
