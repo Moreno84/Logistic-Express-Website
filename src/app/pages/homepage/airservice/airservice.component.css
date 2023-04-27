@@ -11,11 +11,11 @@
 }
 
 .item-button{
-    @apply flex items-center justify-center py-3 px-4 gap-2.5  bg-greenLightDark hover:bg-green-hover rounded w-full md:w-auto;
+    @apply flex items-center justify-center py-3 px-4 gap-2.5 bg-greenLightDark hover:bg-green-hover rounded w-full md:w-auto;
 }
 
 .data-button{
-    @apply flex items-center text-base font-Karma font-extrabold leading-5 text-center text-black;
+    @apply flex items-center text-base font-Karma font-extrabold leading-5 text-center;
 }
 
 .data-svg-button{

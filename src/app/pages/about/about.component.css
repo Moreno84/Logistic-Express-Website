@@ -1,0 +1,6 @@
+.data-title{
+    @apply text-4xl font-Karma font-bold not-italic text-greenLightDark;
+}
+.data-text{
+    @apply first-line:tracking-widest first-letter:text-7xl first-letter:text-greenLightDark first-letter:font-bold first-letter:mr-3 first-letter:float-left not-italic text-left font-Karma font-normal leading-7;
+}

@@ -13,7 +13,7 @@ module.exports = {
       'white':'#ffffff',
     },
     fontFamily:{
-      TitilliumWeb:'Titillium Web',
+      'TitilliumWeb':'Titillium Web',
       'Karma':'Karma',
     },
     

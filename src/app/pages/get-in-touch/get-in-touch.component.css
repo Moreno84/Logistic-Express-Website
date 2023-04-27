@@ -1,0 +1,11 @@
+.data-title{
+    @apply font-bold not-italic font-Karma text-black text-4xl text-center underline;
+}
+
+.data-text{
+    @apply first-line:tracking-widest first-letter:text-7xl first-letter:text-greenLightDark first-letter:font-bold first-letter:mr-3 first-letter:float-left not-italic text-left font-Karma font-normal leading-7;
+}
+
+.item-form{
+    @apply flex-col;
+}
