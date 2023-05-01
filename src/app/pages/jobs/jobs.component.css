@@ -1,0 +1,7 @@
+.section_title{
+    @apply font-Karma text-4xl not-italic font-bold py-5;
+}
+
+.section_text{
+    @apply font-Karma text-xl not-italic font-normal;
+}
