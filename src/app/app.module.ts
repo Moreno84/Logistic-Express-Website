@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +18,8 @@ import { MaritimeserviceComponent } from './pages/homepage/maritimeservice/marit
 import { ServiceComponent } from './pages/service/service.component';
 import { RailwayserviceComponent } from './pages/homepage/railwayservice/railwayservice.component';
 import { JobComponent } from './pages/homepage/job/job.component';
-import { JobsComponent } from './pages/jobs/jobs.component';
+import { CareerComponent } from './pages/career/career.component';
+
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { JobsComponent } from './pages/jobs/jobs.component';
     ServiceComponent,
     RailwayserviceComponent,
     JobComponent,
-    JobsComponent,
+    CareerComponent
+
 
   ],
   imports: [

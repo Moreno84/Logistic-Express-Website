@@ -1,0 +1,23 @@
+.section_title{
+    @apply font-Karma text-4xl not-italic font-bold py-5;
+}
+
+.section_text{
+    @apply font-Karma text-xl not-italic font-normal;
+}
+
+.section_cards{
+    @apply flex flex-row justify-center gap-5;
+}
+
+.card{
+    @apply max-w-sm p-6 bg-greenLight border-0 rounded-lg shadow-xl transition duration-100 hover:scale-x-90;
+}
+
+.card_title{
+    @apply mb-2 text-3xl font-extrabold font-Karma tracking-tight dark:text-white;
+}
+
+.card_text{
+    @apply mb-3 font-normal font-Karma text-base;
+}

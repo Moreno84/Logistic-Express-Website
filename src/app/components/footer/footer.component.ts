@@ -13,7 +13,6 @@ constructor(private router: Router){}
 onAboutUs(){
   this.router.navigate(['/about']);
  
-  
 }
 
  onGetInTouch(){
