@@ -11,6 +11,7 @@ module.exports = {
       'greenLight-hover':'#3ECCA6',
       'green-hover':'#4dffcf',
       'white':'#ffffff',
+   
     },
     fontFamily:{
       'TitilliumWeb':'Titillium Web',

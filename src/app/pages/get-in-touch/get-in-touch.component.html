@@ -20,23 +20,40 @@
     </p>
 </div>
 <div class="item-form">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
         <div class="pb-3">
-            <input type="text" name="nombre" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm font-Karma" placeholder="Name">
+            <input type="text" name="name" formControlName="name" class="item-input" placeholder="Name">
+            <span *ngIf="name && name.invalid && name.touched" style="color:red">
+                Please, Filling in your name.
+            </span>
+        </div>
+
+        <div class="pb-3">
+            <input type="text" name="surname" formControlName="surname" class="item-input" placeholder="Surname">
+            <span *ngIf="surname && surname.invalid && surname.touched" style="color:red">
+                Please, Filling in your surname.
+            </span>
+        </div>
+
+        <div class="pb-3">
+            <input type="email" name="email" formControlName="email" class="item-input" placeholder="Email">
+            <span *ngIf="email && email.invalid && email.touched" style="color:red">
+                Please, Filling in your Email.
+            </span>
         </div>
         <div class="pb-3">
-            <input type="text" name="apellidos" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm font-Karma" placeholder="Surname">
-        </div>
-        <div class="pb-3">
-            <input type="email" name="email" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm font-Karma" placeholder="Email">
-        </div>
-        <div class="pb-3">
-            <textarea name="comentarios" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm font-Karma" placeholder="Comment...."></textarea>
+            <textarea name="comment" class="item-input" formControlName="comment" placeholder="Comment...."></textarea>
+            <span *ngIf="comment && comment.invalid && comment.touched" style="color:red">
+                Maximum 20 charaters
+            </span>
         </div>
         <div>
-            <button type="submit" name="btn" id="btn" class="flex items-center justify-center bg-greenLightDark hover:bg-greenLight-hover rounded-md px-10 py-2 w-full">
+            <button type="submit" [disabled]="registerForm.invalid" name="btn" id="btn" class="flex items-center justify-center bg-greenLightDark hover:bg-greenLight-hover rounded-md px-10 py-2 w-full">
                 <span class="font-Karma font-extrabold text-black">Send</span>
             </button>
         </div>
+    </form>
 </div>
 </div>
 <!-- Footer -->

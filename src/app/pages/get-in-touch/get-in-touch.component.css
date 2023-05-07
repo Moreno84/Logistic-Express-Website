@@ -9,3 +9,8 @@
 .item-form{
     @apply flex-col;
 }
+
+.item-input{
+    @apply placeholder:italic  bg-white w-full border rounded-md py-2 pl-3 pr-3 shadow-sm sm:text-sm font-Karma;
+}
+
