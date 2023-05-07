@@ -1,9 +1,9 @@
 .data-title{
-    @apply font-bold not-italic font-Karma text-black text-4xl text-center underline;
+    @apply font-bold not-italic font-Karma text-black text-4xl text-center underline decoration-greenLightDark decoration-wavy;
 }
 
 .data-text{
-    @apply first-line:tracking-widest first-letter:text-7xl first-letter:text-greenLightDark first-letter:font-bold first-letter:mr-3 first-letter:float-left not-italic text-left font-Karma font-normal leading-7;
+    @apply first-line:tracking-widest first-letter:text-7xl first-letter:text-greenLightDark first-letter:font-bold first-letter:mr-3 first-letter:float-left first-letter:underline first-letter:decoration-greenLightDark first-letter:decoration-wavy not-italic text-left font-Karma font-normal leading-7;
 }
 
 .item-form{
@@ -11,6 +11,6 @@
 }
 
 .item-input{
-    @apply placeholder:italic  bg-white w-full border rounded-md py-2 pl-3 pr-3 shadow-sm sm:text-sm font-Karma;
+    @apply placeholder:italic bg-white w-full border rounded-md py-2 pl-3 pr-3 shadow-sm sm:text-sm font-Karma;
 }
 

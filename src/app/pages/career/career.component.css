@@ -1,5 +1,5 @@
 .section_title{
-    @apply font-Karma text-4xl not-italic font-bold py-5;
+    @apply font-Karma text-3xl not-italic font-bold py-5 underline decoration-greenLightDark decoration-wavy;
 }
 
 .section_text{
@@ -20,4 +20,8 @@
 
 .card_text{
     @apply mb-3 font-normal font-Karma text-base;
+}
+
+.item-title{
+    @apply font-Karma text-5xl text-white not-italic font-bold;
 }
