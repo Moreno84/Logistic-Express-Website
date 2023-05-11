@@ -3,7 +3,7 @@
 }
 
 .data-text{
-    @apply first-line:tracking-widest first-letter:text-7xl first-letter:text-greenLightDark first-letter:font-bold first-letter:mr-3 first-letter:float-left first-letter:underline first-letter:decoration-greenLightDark first-letter:decoration-wavy not-italic text-left font-Karma font-normal leading-7;
+    @apply first-line:tracking-widest first-letter:text-7xl first-letter:text-black first-letter:font-bold first-letter:mr-3 first-letter:float-left first-letter:underline first-letter:decoration-greenLightDark first-letter:decoration-wavy not-italic text-left font-Karma font-normal leading-7;
 }
 
 .item-form{

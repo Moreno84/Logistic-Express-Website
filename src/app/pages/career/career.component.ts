@@ -32,5 +32,9 @@ SalesManagerPDF: string="./assets/documentsPDF/SalesManager.pdf";
     window.open(this.SalesManagerPDF);
   }
 
+  uploadResume(){
+    console.log("Resume was uploaded!")
+  }
+
 
 }
