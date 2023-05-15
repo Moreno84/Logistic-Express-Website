@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-career',
@@ -6,7 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./career.component.css']
 })
 export class CareerComponent {
-
 
 titleCS:string= "Customer service";
 descriptionCS:string="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.";
@@ -32,9 +32,18 @@ SalesManagerPDF: string="./assets/documentsPDF/SalesManager.pdf";
     window.open(this.SalesManagerPDF);
   }
 
+  constructor(private router: Router){}
+
   uploadResume(){
-    console.log("Resume was uploaded!")
+    this.router.navigate(['/uploadresume']);
+    // console.log("Resume was uploaded!")
   }
+
+
+
+
+
+
 
 
 }

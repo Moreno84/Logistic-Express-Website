@@ -6,6 +6,7 @@ import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.compone
 import { ServiceComponent } from './pages/service/service.component';
 import { HomeComponent } from './pages/homepage/home.component';
 import { CareerComponent } from './pages/career/career.component';
+import { UploadResumeComponent } from './pages/upload-resume/upload-resume.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,9 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'career', component: CareerComponent},
   {path: 'getintouch', component: GetInTouchComponent},
+  {path: 'uploadresume', component:UploadResumeComponent},
   {path: '**', component: PagenotfoundComponent}
+ 
 
 ];
 

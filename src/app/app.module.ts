@@ -20,6 +20,7 @@ import { ServiceComponent } from './pages/service/service.component';
 import { RailwayserviceComponent } from './pages/homepage/railwayservice/railwayservice.component';
 import { JobComponent } from './pages/homepage/job/job.component';
 import { CareerComponent } from './pages/career/career.component';
+import { UploadResumeComponent } from './pages/upload-resume/upload-resume.component';
 
 
 
@@ -42,7 +43,8 @@ import { CareerComponent } from './pages/career/career.component';
     ServiceComponent,
     RailwayserviceComponent,
     JobComponent,
-    CareerComponent
+    CareerComponent,
+    UploadResumeComponent
 
 
   ],
