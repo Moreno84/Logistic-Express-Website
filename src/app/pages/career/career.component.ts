@@ -38,12 +38,4 @@ SalesManagerPDF: string="./assets/documentsPDF/SalesManager.pdf";
     this.router.navigate(['/uploadresume']);
     // console.log("Resume was uploaded!")
   }
-
-
-
-
-
-
-
-
 }

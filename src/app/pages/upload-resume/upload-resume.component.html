@@ -7,19 +7,19 @@
  </div>
   <form action="/action_page.php" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
   <div class="mb-6">
-    <label for="fname" class="font-Karma font-bold text-lg">First Name*</label>
+    <label for="fname" class="font-Karma font-bold text-lg">First name*</label>
     <input type="text" formControlName="fname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="fname" name="firstname" placeholder="Your name..">
   </div>
   <div class="mb-6">
-    <label for="lname" class="font-Karma font-bold text-lg">Last Name*</label>
+    <label for="lname" class="font-Karma font-bold text-lg">Last name*</label>
     <input type="text" formControlName="lname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="lname" name="lastname" placeholder="Your last name..">
   </div>
   <div class="mb-6">
-    <label for="lname" class="font-Karma font-bold text-lg">Email*</label>
+    <label for="email" class="font-Karma font-bold text-lg">Email*</label>
     <input type="email" formControlName="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="email" name="email" placeholder="Your email..">
   </div>
   <div class="mb-6">
-    <label for="lname" class="font-Karma font-bold text-lg">Phone number*</label>
+    <label for="phone" class="font-Karma font-bold text-lg">Phone number*</label>
     <input type="number" formControlName="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="phone" name="phone" placeholder="Your phone number..">
   </div>
   <div class="col-span-full">
@@ -30,7 +30,7 @@
         <div class="mt-4 flex text-sm leading-6 text-gray-600">
           <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
             <span>Upload a file</span>
-            <input id="file-upload" name="file-upload" type="file" class="sr-only" />
+            <input type="file" formControlName="uploadResume" id="file-upload" name="file-upload" class="sr-only"/>
           </label>
           <p class="pl-1">or drag and drop</p>
         </div>
@@ -39,7 +39,7 @@
     </div>
   </div>
   <div class="py-20">
-    <input type="submit" (click)="onSubmit()" value="Submit" class="bg-black hover:bg-white hover:text-black text-white px-28 py-4 w-full rounded-lg">
+    <input type="submit" (click)="onSubmit()" value="Submit" class="bg-black hover:bg-white hover:text-black text-white px-28 py-4 w-full rounded-lg cursor-pointer">
   </div>
   </form>
   </div>

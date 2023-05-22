@@ -11,7 +11,7 @@
 }
 
 .card{
-    @apply max-w-sm p-6 bg-greenLight border-0 rounded-lg shadow-xl transition duration-100 hover:scale-x-90;
+    @apply max-w-sm p-6 bg-greenLight border-0 rounded-lg shadow-xl transition duration-100 hover:scale-x-90 cursor-pointer; 
 }
 
 .card_title{

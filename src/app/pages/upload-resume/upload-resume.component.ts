@@ -24,19 +24,23 @@ export class UploadResumeComponent {
   }
 
   get name(){
-    return this.registerForm.get('name');
+    return this.registerForm.get('fname');
   }
 
   get surname(){
-    return this.registerForm.get('surname');
+    return this.registerForm.get('lname');
   }
 
   get email(){
     return this.registerForm.get('email');
   }
 
-  get comment(){
-    return this.registerForm.get('comment');
+  get phone(){
+    return this.registerForm.get('phone');
+  }
+
+  get uploadResume(){
+    return this.registerForm.get('uploadResume');
   }
 
 
