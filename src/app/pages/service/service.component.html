@@ -1,20 +1,20 @@
 <!-- Navbar -->
 <app-navbar></app-navbar>
 <div class="bg-greenLightDark w-full px-14 py-14 gap-5">
-<div>
-    <h1 class="data-title">
-        Our services
-    </h1>
-</div>
-<div>
-    <p class="data-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat ut ante sed pulvinar. Duis ex purus, viverra cursus vestibulum eu, scelerisque sed ipsum. Proin orci leo, rutrum a sem eu, egestas bibendum elit. Maecenas tellus lectus, hendrerit vitae dui at, aliquet pulvinar massa. Phasellus felis nibh, venenatis ac nibh a, suscipit molestie nibh. Ut ullamcorper dolor id elit ullamcorper, et congue urna mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </p>
-</div>
+    <div class="pb-5">
+        <h1 class="section-title">
+            {{title}}
+        </h1>
+        </div>
+    <div>
+        <p class="section-text">
+            {{text}}
+        </p>
+    </div>
 <div class="grid grid-cols-2 place-content-center place-items-center py-10 px-10 gap-x-4 gap-4">
 <div *ngFor="let service of services;" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
-        <img class="rounded-t-lg" [src]="service.image" alt=""/>
+        <img class="rounded-t-lg" [src]="service.image" alt="Services images"/>
     </a>
     <div class="p-5">
         <a href="#">
@@ -30,6 +30,20 @@
     </div>
 </div>
 </div>
+</div>
+<div class="bg-black h-[400px] py-12 px-12">
+    <div class="flex justify-around items-center h-[300px]">
+        <div class="">
+            <h1 class="font-Karma not-italic font-extrabold text-[48px] text-white leading-[58px]">
+                Are you interested in our services?
+            </h1>
+        </div>
+        <div>
+            <button (click)="onClickContact()" class="bg-greenLightDark rounded-xl h-20 py-5 px-5 hover:bg-greenLight">
+                <span class="font-Karma not-italic font-bold text-4xl">Contact us!</span>
+            </button>
+        </div>
+    </div>
 </div>
 <!-- Footer -->
 <app-footer></app-footer>
