@@ -3,7 +3,7 @@
 }
 
 .data-title {
-    @apply flex text-lg font-medium text-black;
+    @apply flex mb-6 text-lg font-semibold uppercase;
 }
 
 .data-links {
@@ -11,5 +11,5 @@
 }
 
 .data-subtitle {
-    @apply flex text-sm text-black;
+    @apply flex text-sm text-black mb-4;
 }

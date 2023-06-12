@@ -8,6 +8,34 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent {
 
+ services = [
+  {
+    'name': 'Air'
+
+  },
+  {
+    'name': 'Maritime'
+
+  },
+  {
+    'name': 'Railway'
+
+  },
+  {
+    'name': 'Road'
+
+  },
+ ] 
+
+ abouts = [
+  {
+    'name': 'Our story'
+  },
+  {
+    'name': 'Career'
+  }
+ ]
+
 constructor(private router: Router){}
 
 onAboutUs(){
