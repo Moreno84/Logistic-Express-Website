@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms'; 
@@ -21,6 +21,9 @@ import { RailwayserviceComponent } from './pages/homepage/railwayservice/railway
 import { JobComponent } from './pages/homepage/job/job.component';
 import { CareerComponent } from './pages/career/career.component';
 import { UploadResumeComponent } from './pages/upload-resume/upload-resume.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormGetInTouchService } from './service/form-get-in-touch.service';
+
 
 
 
@@ -51,9 +54,12 @@ import { UploadResumeComponent } from './pages/upload-resume/upload-resume.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    FormGetInTouchService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

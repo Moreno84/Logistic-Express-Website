@@ -49,7 +49,7 @@
             </span>
         </div>
         <div>
-            <button type="submit" [disabled]="registerForm.invalid" name="btn" id="btn" class="flex items-center justify-center bg-greenLightDark hover:bg-greenLight-hover rounded-md px-10 py-2 w-full">
+            <button type="submit" (click)="onSubmit()" [disabled]="registerForm.invalid" name="btn" id="btn" class="flex items-center justify-center bg-greenLightDark hover:bg-greenLight-hover rounded-md px-10 py-2 w-full">
                 <span class="font-Karma font-extrabold text-black">Send</span>
             </button>
         </div>
