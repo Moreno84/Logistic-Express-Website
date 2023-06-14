@@ -3,10 +3,6 @@ import { Injectable } from '@angular/core';
 import { contact } from './contact';
 
 
-
-
-
-
 @Injectable({
   providedIn: 'root'
 })
