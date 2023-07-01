@@ -1,7 +1,8 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -21,6 +22,9 @@ import { RailwayserviceComponent } from './pages/homepage/railwayservice/railway
 import { JobComponent } from './pages/homepage/job/job.component';
 import { CareerComponent } from './pages/career/career.component';
 import { UploadResumeComponent } from './pages/upload-resume/upload-resume.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormGetInTouchService } from './services/form-get-in-touch.service';
+
 
 
 
@@ -51,9 +55,13 @@ import { UploadResumeComponent } from './pages/upload-resume/upload-resume.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+   
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

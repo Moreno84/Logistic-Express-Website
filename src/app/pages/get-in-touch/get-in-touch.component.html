@@ -20,33 +20,33 @@
     </p>
 </div>
 <div class="item-form">
-    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <form [formGroup]="registerForm" (ngSubmit)="getContactFormData(registerForm.value)">
 
         <div class="pb-3">
-            <input type="text" name="name" formControlName="name" class="item-input" placeholder="Name">
-            <span *ngIf="name && name.invalid && name.touched" style="color:red">
+            <input type="text" name="name" formControlName="Name" class="item-input" placeholder="Name">
+            <!-- <span *ngIf="name && name.invalid && name.touched" style="color:red">
                 Please, Filling in your name.
-            </span>
+            </span> -->
         </div>
 
         <div class="pb-3">
-            <input type="text" name="surname" formControlName="surname" class="item-input" placeholder="Surname">
-            <span *ngIf="surname && surname.invalid && surname.touched" style="color:red">
+            <input type="text" name="surname" formControlName="Surname" class="item-input" placeholder="Surname">
+            <!-- <span *ngIf="Surname && Surname.invalid && Surname.touched" style="color:red">
                 Please, Filling in your surname.
-            </span>
+            </span> -->
         </div>
 
         <div class="pb-3">
-            <input type="email" name="email" formControlName="email" class="item-input" placeholder="Email">
-            <span *ngIf="email && email.invalid && email.touched" style="color:red">
+            <input type="email" name="email" formControlName="Email" class="item-input" placeholder="Email">
+            <!-- <span *ngIf="email && email.invalid && email.touched" style="color:red">
                 Please, Filling in your Email.
-            </span>
+            </span> -->
         </div>
         <div class="pb-3">
-            <textarea name="comment" class="item-input" formControlName="comment" placeholder="Comment...."></textarea>
-            <span *ngIf="comment && comment.invalid && comment.touched" style="color:red">
+            <textarea name="comment" class="item-input" formControlName="Comment" placeholder="Comment...."></textarea>
+            <!-- <span *ngIf="comment && comment.invalid && comment.touched" style="color:red">
                 Maximum 20 charaters
-            </span>
+            </span> -->
         </div>
         <div>
             <button type="submit" [disabled]="registerForm.invalid" name="btn" id="btn" class="flex items-center justify-center bg-greenLightDark hover:bg-greenLight-hover rounded-md px-10 py-2 w-full">
