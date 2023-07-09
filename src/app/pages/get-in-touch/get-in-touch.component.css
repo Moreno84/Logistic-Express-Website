@@ -1,5 +1,5 @@
 .data-title{
-    @apply font-bold not-italic font-Karma text-black text-4xl text-center underline decoration-greenLightDark decoration-wavy;
+    @apply font-bold not-italic font-Karma text-black text-4xl text-center;
 }
 
 .data-text{

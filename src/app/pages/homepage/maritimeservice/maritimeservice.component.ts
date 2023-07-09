@@ -16,6 +16,7 @@ export class MaritimeserviceComponent {
 
   onClickMaritimeServ(){
     this.router.navigate(['/service']);
+    console.log("You pressed the button");
   }
 
 }

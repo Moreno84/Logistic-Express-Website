@@ -1,5 +1,5 @@
 .section_title{
-    @apply font-Karma text-3xl not-italic font-bold py-5 underline decoration-greenLightDark decoration-wavy;
+    @apply font-Karma text-3xl not-italic font-bold py-5;
 }
 
 .section_text{
@@ -25,3 +25,5 @@
 .item-title{
     @apply font-Karma text-5xl text-white not-italic font-bold;
 }
+
+

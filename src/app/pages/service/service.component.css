@@ -1,5 +1,5 @@
 .section-title{
-    @apply font-bold not-italic font-Karma text-black text-4xl text-center underline decoration-white decoration-wavy;
+    @apply font-bold not-italic font-Karma text-black text-4xl text-center;
 }
 .section-text{
     @apply font-Karma font-normal not-italic text-left;

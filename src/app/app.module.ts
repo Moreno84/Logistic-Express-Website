@@ -26,8 +26,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormGetInTouchService } from './services/form-get-in-touch.service';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +48,6 @@ import { FormGetInTouchService } from './services/form-get-in-touch.service';
     CareerComponent,
     UploadResumeComponent
 
-
   ],
   imports: [
     BrowserModule,
@@ -60,7 +57,7 @@ import { FormGetInTouchService } from './services/form-get-in-touch.service';
     FormsModule
   ],
   providers: [
-   
+    FormGetInTouchService
   ],
   bootstrap: [AppComponent]
 })
