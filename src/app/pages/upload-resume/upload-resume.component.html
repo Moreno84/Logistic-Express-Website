@@ -5,22 +5,34 @@
   <div class="py-10">
     <h3 class="text-5xl font-Karma font-bold not-italic text-center">Information</h3>
  </div>
-  <form action="/action_page.php" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
   <div class="mb-6">
-    <label for="fname" class="font-Karma font-bold text-lg">First name*</label>
-    <input type="text" formControlName="fname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="fname" name="firstname" placeholder="Your name..">
+    <label for="name" class="font-Karma font-bold text-lg">First name*</label>
+    <input type="text" formControlName="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="fname" name="name" placeholder="Your name..">
+      <span style="color:red; font-weight: bold;" *ngIf="name && name.invalid && name.touched">
+                Please, Filling in your name.
+            </span> 
   </div>
   <div class="mb-6">
-    <label for="lname" class="font-Karma font-bold text-lg">Last name*</label>
-    <input type="text" formControlName="lname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="lastName" class="font-Karma font-bold text-lg">Last name*</label>
+    <input type="text" formControlName="lastname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="lname" name="lastName" placeholder="Your last name..">
+                <span *ngIf="lastname && lastname.invalid && lastname.touched" style="color:red;font-weight: bold;">
+                Please, Filling in your lastname.
+            </span>
   </div>
   <div class="mb-6">
     <label for="email" class="font-Karma font-bold text-lg">Email*</label>
     <input type="email" formControlName="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="email" name="email" placeholder="Your email..">
+    <span *ngIf="email && email.invalid && email.touched" style="color:red; font-weight: bold;">
+      Please, Filling in your email.
+  </span>
   </div>
   <div class="mb-6">
     <label for="phone" class="font-Karma font-bold text-lg">Phone number*</label>
-    <input type="number" formControlName="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="phone" name="phone" placeholder="Your phone number..">
+    <input type="phonenumber" formControlName="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="phone" name="phone" placeholder="Your phone number..">
+    <span *ngIf="phone && phone.invalid && phone.touched" style="color:red; font-weight: bold;">
+      Please, Filling in your phone number.
+  </span>
   </div>
   <div class="col-span-full">
     <label for="cover-photo" class="block font-Karma font-bold text-lg">Upload resume*</label>
@@ -39,7 +51,7 @@
     </div>
   </div>
   <div class="py-20">
-    <input type="submit" (click)="onSubmit()" value="Submit" class="bg-black hover:bg-white hover:text-black text-white px-28 py-4 w-full rounded-lg cursor-pointer">
+    <input type="submit" [disabled]="registerForm.invalid" value="Submit" class="bg-black hover:bg-white hover:text-black text-white px-28 py-4 w-full rounded-lg cursor-pointer">
   </div>
   </form>
   </div>

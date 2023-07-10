@@ -11,8 +11,8 @@ export class UploadResumeComponent {
   //Form validation
 
   registerForm = new FormGroup({
-    fname: new FormControl('',[Validators.required,Validators.maxLength(10)]),
-    lname: new FormControl('',[Validators.required,Validators.maxLength(10)]),
+    name: new FormControl('',[Validators.required,Validators.maxLength(10)]),
+    lastname: new FormControl('',[Validators.required,Validators.maxLength(10)]),
     email: new FormControl('',[Validators.required,Validators.email]),
     phone: new FormControl('',[Validators.required]),
     uploadResume: new FormControl('',[Validators.required,Validators.maxLength(50)])
@@ -24,11 +24,11 @@ export class UploadResumeComponent {
   }
 
   get name(){
-    return this.registerForm.get('fname');
+    return this.registerForm.get('name');
   }
 
-  get surname(){
-    return this.registerForm.get('lname');
+  get lastname(){
+    return this.registerForm.get('lastname');
   }
 
   get email(){
