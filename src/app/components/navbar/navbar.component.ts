@@ -10,7 +10,7 @@ export class NavbarComponent {
 
   constructor(private router: Router){}
   
-  title= "Travelling";
+  title= "Logistic Express";
   logo:string="assets/images/logo.png";
 
   onclick(){
