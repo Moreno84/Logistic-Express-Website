@@ -29,10 +29,10 @@ export class FooterComponent {
 
  abouts = [
   {
-    'name': 'Our story'
+    'ourStory': 'Our story'
   },
   {
-    'name': 'Career'
+    'career': 'Career'
   }
  ]
 

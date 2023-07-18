@@ -1,5 +1,5 @@
-<footer class="bg-greenLight dark:bg-gray-900">
-    <div class="grid grid-cols-1 px-6 py-6 md:grid-cols-3">
+<footer class="w-full bg-greenLight dark:bg-gray-900">
+    <div class="grid grid-cols-1 px-6 py-6 md:grid-cols-3 place-content-center">
         <div>
             <h2 class="data-title">Our services</h2>
             <ul *ngFor="let service of services" class="text-gray-500 dark:text-gray-400">
@@ -12,7 +12,8 @@
             <h2 class="data-title">About us</h2>
             <ul *ngFor="let about of abouts" class="text-gray-500 dark:text-gray-400">
                 <li class="data-subtitle">
-                    <a href="#" class="hover:underline" routerLink="/about">{{about.name}}</a>
+                    <a href="#" class="hover:underline" routerLink="/about">{{about.ourStory}}</a>
+                    <a href="#" class="hover:underline" routerLink="/career">{{about.career}}</a>
                 </li>
             </ul>
         </div>
