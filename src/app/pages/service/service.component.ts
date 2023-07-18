@@ -17,7 +17,7 @@ services: any =[
       'text': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet aliquam id diam maecenas."
     },
     {
-      'image': "./assets/images/img_cruiseship_service_maritime.png",
+      'image': "./assets/images/img_ship_service_maritime.png",
       'title':"Our maritime",
       'text': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet aliquam id diam maecenas."
     },
