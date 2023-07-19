@@ -9,7 +9,7 @@ export class PagenotfoundComponent {
   constructor(private router: Router){}
 
   goHome(){
-    this.router.navigate(['home']);
+    this.router.navigate(['']);
   }
 
 }

@@ -10,7 +10,7 @@ import { UploadResumeComponent } from './pages/upload-resume/upload-resume.compo
 
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path: 'service', component: ServiceComponent},
   {path: 'about', component: AboutComponent},
   {path: 'career', component: CareerComponent},
