@@ -1,12 +1,26 @@
-import { Component } from '@angular/core';
+import { JobsDataService } from 'src/app/services/jobs-data.service';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { Job } from 'src/app/services/job';
+
+
 
 @Component({
   selector: 'app-career',
   templateUrl: './career.component.html',
   styleUrls: ['./career.component.css']
 })
-export class CareerComponent {
+export class CareerComponent implements OnInit {
+ 
+jobs$: Observable<Job[]>;
+
+constructor(private router: Router, private data: JobsDataService){
+  this.jobs$ = this.data.getJobs();
+  this.jobs$.subscribe();
+}
+
+
 
 titleCS:string= "Customer service";
 descriptionCS:string="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.";
@@ -32,10 +46,10 @@ SalesManagerPDF: string="./assets/documentsPDF/SalesManager.pdf";
     window.open(this.SalesManagerPDF);
   }
 
-  constructor(private router: Router){}
-
   uploadResume(){
     this.router.navigate(['/uploadresume']);
     // console.log("Resume was uploaded!")
   }
+
+  ngOnInit(){}
 }
