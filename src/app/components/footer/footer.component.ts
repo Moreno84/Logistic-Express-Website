@@ -36,6 +36,12 @@ export class FooterComponent {
   }
  ]
 
+ contacts =[
+  {
+    'contact': 'Get in touch'
+  }
+ ]
+
 constructor(private router: Router){}
 
 onAboutUs(){
