@@ -13,6 +13,12 @@ export class NavbarComponent {
   title= "Logistic Express";
   logo:string="assets/images/logo.png";
 
+  showMe=false;
+
+  toogletag(){
+    this.showMe=!this.showMe;
+  }
+
   onclick(){
     this.router.navigate(['/getintouch']);
   }

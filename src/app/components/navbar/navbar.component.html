@@ -1,5 +1,6 @@
-<nav class="container flex max-screen-md items-center w-full mx-auto py-4 px-12 bg-white text-center">
-    <!-- Logo and title  -->
+<nav class="bg-white">
+  <div class="flex flex-wrap justify-between items-center w-full py-4 px-8 mx-auto">
+    <!-- Website Logo -->
     <div class="mr-4">
       <a routerLink="/home" class="flex mr-auto items-center">
           <img [src]="logo" class="h-8 mr-3 sm:h-0" alt="Travelling Exam Logo"/>
@@ -8,8 +9,8 @@
           </span>
       </a>
       </div>
-      <!-- Menu -->
-      <div class="flex items-center justify-between ml-auto">
+      <!-- Primary Navbar items -->
+      <div class="hidden md:flex ml-auto">
         <div class="p-2 cursor-pointer hover:underline decoration-greenLight decoration-4" routerLink="/home">
           Home
         </div>
@@ -22,8 +23,29 @@
         <div class="p-2 cursor-pointer hover:underline decoration-greenLight decoration-4" routerLink="/about">
           About us
         </div>
-      <button type="button" (click)="onclick()" class="bg-greenLight hover:bg-greenLight-hover rounded-md px-4 py-2">
+      <button type="button" (click)="onclick()" class="bg-greenLight hover:underline decoration-greenLight decoration-4-hover rounded-md px-4 py-2">
           Get in touch
       </button>
     </div>
+
+    <!-- mobile button -->
+          <div class="md:hidden flex items-center">
+            <button (click)="toogletag()" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path class="hover:bg-greeLighter" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            </button>
+            
+            </div>
+
+    <!-- mobile menu -->
+    <div *ngIf="showMe" class="w-full flex flex-col items-center [ngClass]={'hidden': !showMenu, 'flex': showMenu}">
+
+        <a class=" block py-2 px-4 text-sm bg-greenLight"routerLink="/home">Home</a>
+        <a class=" block py-2 px-4 text-sm hover:underline decoration-greenLight decoration-4" routerLink="/service">Our services</a>
+        <a class=" block py-2 px-4 text-sm hover:underline decoration-greenLight decoration-4" routerLink="/career" >Career</a>
+        <a class=" block py-2 px-4 text-sm hover:underline decoration-greenLight decoration-4" routerLink="/about">About us</a>
+        <a class=" block py-2 px-4 text-sm hover:underline decoration-greenLight decoration-4" routerLink="/getintouch">Get in touch</a>
+    </div>
+  </div>
 </nav>
