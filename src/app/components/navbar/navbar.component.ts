@@ -10,16 +10,16 @@ export class NavbarComponent {
 
   constructor(private router: Router){}
   
-  title= "Logistic Express";
+  title="Logistic Express";
   logo:string="assets/images/logo.png";
+  isMenuOpen=false;
 
-  showMe=false;
 
-  toogletag(){
-    this.showMe=!this.showMe;
+  tooglemenu(){
+    this.isMenuOpen=!this.isMenuOpen;
   }
 
-  onclick(){
+  getintouchbutton(){
     this.router.navigate(['/getintouch']);
   }
 
