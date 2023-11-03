@@ -1,9 +1,9 @@
-<nav class="bg-white">
+<nav class="bg-white hover:bg-greenLight-hover">
   <div class="flex flex-wrap justify-between items-center py-6 px-8 mx-auto">
     <!-- Website Logo -->
     <div class="mx-2">
       <a routerLink="/home" class="flex mr-auto items-center">
-          <img [src]="logo" class="h-8 mr-3 sm:h-0" alt="Travelling Exam Logo"/>
+          <img [src]="logo"class="h-8 mr-3" alt="Travelling Exam Logo"/>
           <span class="self-center font-TitilliumWeb text-4xl not-italic font-semibold whitespace-nowrap leading-10 tracking-tight">
             {{title}}
           </span>
@@ -23,7 +23,7 @@
         <div class="p-2 cursor-pointer hover:underline decoration-greenLight decoration-4" routerLink="/about">
           About us
         </div>
-      <button type="button" (click)="getintouchbutton()" class="bg-greenLight hover:underline decoration-greenLight decoration-4-hover rounded-md px-4 py-2">
+      <button type="button" (click)="getintouchbutton()" class="bg-greenLight decoration-greenLight decoration-4-hover hover:hover:bg-greenLightDark rounded-md px-4 py-2">
           Get in touch
       </button>
     </div>

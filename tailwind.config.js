@@ -8,7 +8,7 @@ module.exports = {
       'greeLighter': '#4dffcf80',
       'greenLightDark': '#3ECCA6',
       'greeLighter-hover': '#4dffcf80',
-      'greenLight-hover':'#3ECCA6',
+      'greenLight-hover':'#e6fff8',
       'green-hover':'#4dffcf',
       'white':'#ffffff',
    
