@@ -7,5 +7,5 @@
 }
 
 .data-text{
-    @apply font-Karma not-italic;
+    @apply font-Karma not-italic text-ellipsis;
 }
