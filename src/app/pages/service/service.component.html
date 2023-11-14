@@ -11,14 +11,14 @@
             {{text}}
         </p>
     </div>
-<div class="grid grid-cols-2 place-content-center place-items-center py-10 px-10 gap-x-4 gap-4">
+<div class="grid grid-cols-2 min-[320px]:grid-cols-1 md:grid-cols-2  place-content-center place-items-center py-10 px-10 gap-x-4 gap-4">
 <div *ngFor="let service of services;" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
         <img class="rounded-t-lg" [src]="service.image" alt="Services images"/>
     </a>
     <div class="p-5">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{service.title}}</h5>
+            <h5 class="mb-2 text-2xl max-[320px]:text-sm min-[320px]:font-medium font-bold tracking-tight text-gray-900 dark:text-white">{{service.title}}</h5>
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{service.text}}</p>
         <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-greenLightDark rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -34,17 +34,16 @@
 <div class="bg-black h-[400px] py-12 px-12">
     <div class="flex justify-around items-center h-[300px]">
         <div class="">
-            <h1 class="font-Karma not-italic font-extrabold text-[48px] text-white leading-[58px]">
+            <h1 class="font-Karma not-italic font-extrabold text-[48px] max-[320px]:text-[24px] max-[320px]:leading-[20px] text-white leading-[58px]">
                 Are you interested in our services?
             </h1>
         </div>
         <div>
-            <button (click)="onClickContact()" class="bg-greenLightDark rounded-xl h-20 py-5 px-5 hover:bg-greenLight">
-                <span class="font-Karma not-italic font-bold text-4xl">Contact us!</span>
+            <button (click)="onClickContact()" class="bg-greenLightDark rounded-xl h-20 max-[320px]:h-10 max-[320px]:flex min-[320px]:items-center py-5 px-5 hover:bg-greenLight">
+                <span class="font-Karma not-italic font-bold text-4xl max-[320px]:text-base min-[320px]:leading-3">Contact us!</span>
             </button>
         </div>
     </div>
 </div>
 <!-- Footer -->
 <app-footer></app-footer>
-
