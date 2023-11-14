@@ -1,7 +1,6 @@
 <!-- Navbar -->
 <app-navbar></app-navbar>
 <div class="w-full bg-white">
-
 <div class="flex justify-center py-10 px-10">
     <img [src]="imageMap" alt="map" class="rounded-lg drop-shadow-2xl">
 </div>
@@ -12,9 +11,9 @@
     </h1>
 </div>
 
-<div class="flex justify-center h-[500px] overflow-hidden break-words py-10 px-10">
+<div class="flex justify-center h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden break-words py-10 px-10">
 
-<div class="flex-col basis-1/5 text-ellipsis pr-4">
+<div class="flex-col basis-1/5 text-ellipsis px-4">
     <p class="data-text">
         {{text}}
     </p>
@@ -26,7 +25,7 @@
             <input type="text" name="name" formControlName="Name" class="item-input" placeholder="Name">
             <!-- <span *ngIf="name && name.invalid && name.touched" style="color:red">
                 Please, Filling in your name.
-            </span> -->
+            </spam>-->
         </div>
 
         <div class="pb-3">

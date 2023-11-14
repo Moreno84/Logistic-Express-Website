@@ -3,7 +3,7 @@
 }
 
 .data-title {
-    @apply flex mb-6 text-lg font-semibold uppercase;
+    @apply flex mb-2 text-lg min-[320px]:text-xs min-[320px]:leading-3 font-semibold uppercase;
 }
 
 .data-links {

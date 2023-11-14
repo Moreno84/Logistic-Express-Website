@@ -11,6 +11,7 @@ import { FormGetInTouchService } from 'src/app/services/form-get-in-touch.servic
   providers: [FormGetInTouchService]
 })
 export class GetInTouchComponent implements OnInit {
+[x: string]: any;
   // Image
     imageMap:string="./assets/images/map.png";
   // Title
