@@ -3,5 +3,5 @@
 }
 
 .data-button{
-    @apply flex items-center text-base font-Karma font-extrabold leading-5 text-center;
+    @apply items-center text-base font-Karma font-extrabold leading-5 text-center;
 }
