@@ -1,11 +1,11 @@
-<div class="w-full h-80 sm:h-[500px] md:h-96 bg-greeLighter py-10 px-10">
-    <div class="flex sm:flex-col md:flex-row md:items-center h-60 py-5 px-5">
-     <div class="flex flex-col items-center basis-2/4">
-        <img [src]="teamWorkImage" alt="Team work image" class="rounded-lg shadow-2xl">    
-    </div>
-    <div class="flex flex-col justify-center gap-4"> 
+<div class="w-full h-80 min-[320px]:h-[450px] bg-greeLighter py-10 px-10">
+    <div class="flex min-[320px]:flex-col sm:flex-col md:flex-row md:items-center md:gap-5 h-60 py-5 px-5">
+        <div class="flex flex-col items-center basis-2/4">
+            <img [src]="teamWorkImage" alt="Team work image" class="min-[320px]:flex min-[320px]:flex-row sm:flex sm:justify-center rounded-lg shadow-2xl">    
+        </div>
+        <div class="flex flex-col justify-center gap-4">
             <div class="">
-                 <h2 class="font-Karma font-bold text-4xl">Are you interested in working with us?</h2>
+                <h2 class="font-Karma font-bold text-4xl">Are you interested in working with us?</h2>
             </div>
             <div class="">
                 <button type="button" (click)="onclick()" class="item-button">
@@ -17,6 +17,6 @@
                     </svg> 
                 </button>
             </div>
-    </div>
+        </div>
     </div>
 </div>

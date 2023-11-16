@@ -3,11 +3,11 @@
 }
 
 .data-subTitle{
-    @apply font-Karma font-bold text-3xl;
+    @apply font-Karma font-bold text-3xl min-[320px]:text-2xl;
 }
 
 .data-text{
-    @apply font-Karma not-italic;
+    @apply font-Karma not-italic text-2xl min-[320px]:text-sm text-ellipsis;
 }
 
 .item-button{
