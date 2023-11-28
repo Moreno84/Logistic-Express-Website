@@ -5,17 +5,16 @@
             <h2 class="data-title">Our services</h2>
             <ul *ngFor="let service of services">
                 <li class="data-subtitle">
-                    <a href="#" class="hover:underline">{{service.name}}</a>
+                    <a href="#" class="hover:underline hover:decoration-white hover:decoration-4">{{service.name}}</a>
                 </li>
             </ul>
         </div>
-
         <div>
             <h2 class="data-title">About us</h2>
             <ul *ngFor="let about of abouts">
                 <li class="data-subtitle">
-                    <a href="#" class="hover:underline" routerLink="/about">{{about.ourStory}}</a>
-                    <a href="#" class="hover:underline" routerLink="/career">{{about.career}}</a>
+                    <a href="#" class="hover:underline hover:decoration-white hover:decoration-4" routerLink="/about">{{about.ourStory}}</a>
+                    <a href="#" class="hover:underline hover:decoration-white hover:decoration-4" routerLink="/career">{{about.career}}</a>
                 </li>
             </ul>
         </div>
@@ -24,14 +23,12 @@
             <h2 class="data-title">Contact</h2>
             <ul *ngFor="let contact of contacts">
                 <li class="data-subtitle">
-                    <a href="#" class="hover:underline" routerLink="/getintouch" >{{contact.contact}}</a>
+                    <a href="#" class="hover:underline hover:decoration-white hover:decoration-4" routerLink="/getintouch" >{{contact.contact}}</a>
                 </li>
             </ul>
         </div>
     </div>
-
     </div>
-
     <div class="px-4 py-6 sm:flex sm:items-center sm:justify-center md:flex md:items-center md:justify-between">
         <span class="text-base font-semibold min-[320px]:flex min-[320px]:justify-center  min-[320px]:text-sm">© 2023 <a routerLink="/home">Logistic Express</a>. All Rights Reserved.
         </span>
