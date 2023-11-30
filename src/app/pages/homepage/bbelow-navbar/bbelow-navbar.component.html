@@ -1,15 +1,15 @@
-<div class="backgroundColor w-full mx-auto h-[497px] px-11 py-11">
-    <div class="flex justify-center h-[410px] py-11 px-11 max-screen-md mx-auto">
-    <div class="flex flex-col h-[326px] gap-3 md:flex">
-        <span class="font-semibold not-italic text-5xl font-Karma text-ellipsis">
+<div class="backgroundColor w-full mx-auto">
+    <div class="flex h-[420px] min-[320px]:flex min-[320px]:flex-col sm:flex sm:flex-row sm:items-center sm:py-10 sm:px-10 min-[320px]:h-[500px] py-5 px-5">
+    <div class="flex flex-col justify-start h-[326px] gap-4">
+        <span class="font-semibold not-italic text-5xl leading-10 font-Karma text-ellipsis">
             {{title}}
         </span>
         <p class="font-Karma not-italic font-normal text-sm text-ellipsis">
             {{text}}
         </p>
     </div>
-    <div class="shrink-0 grow-0 basis-3/4 pl-5">
-        <img class="md:flex md:items-center" [src]="imagePlane" alt="image plane">
+    <div class="shrink-0 grow-0 basis-2/3 sm:flex sm:justify-center">
+        <img class="object-cover" [src]="imagePlane" alt="image plane">
     </div>
     </div>
 </div>
