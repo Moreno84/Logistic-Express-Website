@@ -1,8 +1,8 @@
 # Logistic-Express-Website
 
-Whether you want to have a look at my project, you can just copy this URL link: https://65685a57e993840d453df746--dancing-gumdrop-d4c712.netlify.app/home. 
+Whether you want to have a look at my project, you can just press this URL link: https://65685a57e993840d453df746--dancing-gumdrop-d4c712.netlify.app/home. 
 
-Actually, It's not finished yet but we are working on it.
+Actually, It's not finished yet but we are working on it little by little.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
