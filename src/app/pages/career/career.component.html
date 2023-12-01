@@ -1,6 +1,6 @@
 <!-- Navbar -->
 <app-navbar></app-navbar>
-<div class="w-full bg-white">
+<div class="bg-white w-full">
     <div class="px-10 py-10 gap-4">
         <div>
             <h1 class="section_title">Job postings</h1>
@@ -11,7 +11,7 @@
             </p>
         </div>
     </div>
-    <div class="h-96 px-10 py-10">
+    <div class="h-96 min-[320px]:h-[850px] sm:h-[700px] md:h-[400px] px-10 py-10">
     <div class="section_cards" *ngFor="let job of jobs$ |async" >
         <!-- card -->
         <div class="card">
@@ -48,12 +48,12 @@
         </div>
     </div>
     </div>
-    <div class="bg-black h-96 py-10 px-20">
-    <div class="flex justify-between items-center h-72 gap-5">
+    <div class="bg-black h-96 py-10 px-10 min-[320px]:h-[400px]">
+    <div class="flex justify-between items-center min-[320px]:flex min-[320px]:flex-col sm:flex sm:flex-row h-72 gap-5">
         <div>
             <h1 class="item-title">Excited to work with us?</h1>
         </div> 
-        <div>
+        <div class="">
             <button (click)="uploadResume()" class="flex items-center h-20 py-5 px-5 rounded-lg bg-greenLightDark hover:bg-greenLight">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-3">
                     <path class="text-white font-bold"stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />

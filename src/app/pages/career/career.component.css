@@ -7,11 +7,11 @@
 }
 
 .section_cards{
-    @apply flex flex-row justify-center gap-5;
+    @apply flex flex-row items-stretch min-[320px]:flex min-[320px]:flex-col sm:flex sm:flex-col md:flex md:flex-row gap-5 ;
 }
 
 .card{
-    @apply max-w-sm p-6 bg-greenLight border-0 rounded-lg shadow-xl transition duration-100 hover:scale-x-90 cursor-pointer; 
+    @apply  w-full p-6 bg-greenLight border-0 rounded-lg shadow-xl transition duration-100 hover:scale-x-90 cursor-pointer; 
 }
 
 .card_title{
