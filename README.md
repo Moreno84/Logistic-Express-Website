@@ -1,6 +1,6 @@
 # Logistic-Express-Website
 
-Whether you want to have a look at my project, you can just press this URL link: https://app.netlify.com/sites/spiffy-clafoutis-268301/overview. 
+Whether you want to have a look at my project, you can just press this URL link: https://656c64cb4cdb7d73a2eec3d7--spiffy-clafoutis-268301.netlify.app/
 
 Actually, it's not finished yet but i am working on it little by little.
 
