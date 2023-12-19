@@ -1,17 +1,17 @@
 <!-- Navbar -->
 <app-navbar></app-navbar>
 <div class="flex justify-center bg-greenLightDark">
-<div class=" w-1/2">
+<div class="w-1/3">
   <div class="py-10">
-    <h3 class="text-5xl font-Karma font-bold not-italic text-center">Information</h3>
+    <h3 class="text-5xl font-Karma font-bold not-italic text-center min-[320px]:text-lg min-[320px]:text-truncate sm:text-5xl">Information</h3>
  </div>
-  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <div class="mb-6">
     <label for="name" class="font-Karma font-bold text-lg">First name*</label>
     <input type="text" formControlName="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="fname" name="name" placeholder="Your name..">
       <span style="color:red; font-weight: bold;" *ngIf="name && name.invalid && name.touched">
                 Please, Filling in your name.
-            </span> 
+       </span> 
   </div>
   <div class="mb-6">
     <label for="lastName" class="font-Karma font-bold text-lg">Last name*</label>
@@ -42,7 +42,7 @@
         <div class="mt-4 flex text-sm leading-6 text-gray-600">
           <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
             <span>Upload a file</span>
-            <input type="file" formControlName="uploadResume" id="file-upload" name="file-upload" class="sr-only"/>
+            <input type="file" (change)="getResume($event)" formControlName="uploadResume" id="file-upload" name="file-upload" class="sr-only"/>
           </label>
           <p class="pl-1">or drag and drop</p>
         </div>
@@ -50,10 +50,10 @@
       </div>
     </div>
   </div>
-  <div class="py-20">
-    <input type="submit" [disabled]="registerForm.invalid" value="Submit" class="bg-black hover:bg-white hover:text-black text-white px-28 py-4 w-full rounded-lg cursor-pointer">
+  <div class="py-5">
+    <input type="submit" [disabled]="form.invalid" value="Submit" class="w-full bg-black hover:bg-white hover:text-black text-white px-4 py-4 rounded-lg cursor-pointer">
   </div>
-  </form>
+  </form> 
   </div>
 </div>
 <!-- Footer -->

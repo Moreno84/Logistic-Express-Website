@@ -10,37 +10,44 @@ export class UploadResumeComponent {
 
   //Form validation
 
-  registerForm = new FormGroup({
+  form = new FormGroup({
     name: new FormControl('',[Validators.required,Validators.maxLength(10)]),
     lastname: new FormControl('',[Validators.required,Validators.maxLength(10)]),
-    email: new FormControl('',[Validators.required,Validators.email]),
+    email: new FormControl('',[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
     phone: new FormControl('',[Validators.required]),
     uploadResume: new FormControl('',[Validators.required,Validators.maxLength(50)])
 
   })
 
   onSubmit(){
-    console.warn(this.registerForm.value)
+    console.warn(this.form.value)
   }
 
   get name(){
-    return this.registerForm.get('name');
+    return this.form.get('name');
   }
 
   get lastname(){
-    return this.registerForm.get('lastname');
+    return this.form.get('lastname');
   }
 
   get email(){
-    return this.registerForm.get('email');
+    return this.form.get('email');
   }
 
   get phone(){
-    return this.registerForm.get('phone');
+    return this.form.get('phone');
   }
 
   get uploadResume(){
-    return this.registerForm.get('uploadResume');
+    return this.form.get('uploadResume');
+  }
+
+  file:any;
+  getResume(event:any){
+    this.file = event.target.files[0];
+
+    console.log('file',this.file);
   }
 
 
