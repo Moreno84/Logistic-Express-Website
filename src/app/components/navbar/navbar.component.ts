@@ -10,12 +10,15 @@ export class NavbarComponent {
 
   constructor(private router: Router){}
   
-  title="Logistic Express";
+  // Properties
+  
+  title:string="Logistic Express";
   logo:string="assets/images/logo.png";
-  isMenuOpen=false;
+  isMenuOpen:boolean=false;
 
+  // Functions
 
-  tooglemenu(){
+  toogleMenu(){
     this.isMenuOpen=!this.isMenuOpen;
   }
 

@@ -28,19 +28,15 @@
     </div>
     <!-- Mobile button -->
     <div class="md:hidden flex items-center">
-        <button (click)="tooglemenu()">
+        <button (click)="toogleMenu()">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
-            <path *ngIf="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <path *ngIf="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" class="text-black"/>
+            <path *ngIf="isMenuOpen" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" class="text-greenLight hover:bg-greeLighter" />
           </svg>            
         </button>    
     </div>
     <!-- Mobile menu -->
-    <div *ngIf="isMenuOpen" class="md:hidden w-full flex flex-col items-center min-[320px]:flex min-[320px]:items-end">
-      <button (click)="tooglemenu()">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
-        <path *ngIf="isMenuOpen" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-      </svg> 
-    </button>
+    <div *ngIf="isMenuOpen" [class.menuClass]="isMenuOpen" class="md:hidden w-full bg-greenLightDark flex flex-col items-center min-[320px]:flex min-[320px]:items-center min-[320px]:p-4" >
         <a class="block py-2 px-4 text-sm font-normal hover:underline decoration-greenLight decoration-4 " routerLink="/home">Home</a>
         <a class="block py-2 px-4 text-sm font-normal hover:underline decoration-greenLight decoration-4" routerLink="/service">Our services</a>
         <a class="block py-2 px-4 text-sm font-normal hover:underline decoration-greenLight decoration-4" routerLink="/career" >Career</a>

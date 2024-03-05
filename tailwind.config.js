@@ -17,6 +17,11 @@ module.exports = {
       'TitilliumWeb':'Titillium Web',
       'Karma':'Karma',
     },
+    texts:{
+
+      'text-greenLight':'#4dffcf80',
+      'text-black':'#000000',
+    },
     
     extend: {},
   },
