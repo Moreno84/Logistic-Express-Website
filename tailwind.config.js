@@ -11,6 +11,7 @@ module.exports = {
       'greenLight-hover':'#e6fff8',
       'green-hover':'#4dffcf',
       'white':'#ffffff',
+      'blackhover':'#003300',
    
     },
     fontFamily:{

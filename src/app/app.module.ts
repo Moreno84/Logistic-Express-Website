@@ -24,6 +24,8 @@ import { CareerComponent } from './pages/career/career.component';
 import { UploadResumeComponent } from './pages/upload-resume/upload-resume.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormGetInTouchService } from './services/form-get-in-touch.service';
+import { CookieComponent } from './pages/cookie/cookie.component';
+import { CookieService } from 'ngx-cookie-service';
 
 
 @NgModule({
@@ -46,7 +48,8 @@ import { FormGetInTouchService } from './services/form-get-in-touch.service';
     RailwayserviceComponent,
     JobComponent,
     CareerComponent,
-    UploadResumeComponent
+    UploadResumeComponent,
+    CookieComponent
 
   ],
   imports: [
@@ -57,7 +60,9 @@ import { FormGetInTouchService } from './services/form-get-in-touch.service';
     FormsModule
   ],
   providers: [
-    FormGetInTouchService
+    FormGetInTouchService,
+    CookieService
+  
   ],
   bootstrap: [AppComponent]
 })
