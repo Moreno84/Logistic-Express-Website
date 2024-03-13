@@ -1,3 +1,7 @@
 .cookie{
-    @apply fixed bottom-0 right-0 w-[300px] h-52 bg-greenLightDark text-white rounded-xl ;
+    @apply fixed bottom-0 right-0 w-[320px] h-52 bg-white text-greenLight rounded-xl ;
+}
+
+.textBox{
+    @apply py-5
 }
