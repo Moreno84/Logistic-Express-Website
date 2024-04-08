@@ -8,6 +8,8 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class CookieComponent {
 
+  imageCookie:string="./assets/images/chocolate-chip-cookies.png";
+
 constructor(private cookie: CookieService){}
 
 ngOnInit():void{
