@@ -1,6 +1,6 @@
 # Logistic-Express-Website
 
-Whether you want to have a look at my project, you can just press this URL link: https://fanciful-buttercream-0c9228.netlify.app/
+Whether you want to have a look at my project, you can just press this URL link: https://logistic-express-ivan.netlify.app/
 
 Actually, it's not finished yet but i am working on it little by little.
 
